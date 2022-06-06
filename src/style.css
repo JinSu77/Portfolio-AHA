@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 340vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+section {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    height: auto;
+    width: 100vw;
+    background-color: black;
+    padding-top: 40px;
+    ;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h2 {
+    padding-bottom: 50px;
+}
+
+.footer-content p {
+    margin: 5px auto;
+}
+
+.footer-bottom {
+    width: 100vw;
+    padding-top: 270px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+#mail {
+    color: red;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+svg {
+    padding-right: 40px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    align-items: center;
+}
+
+ul.show {
+    display: block;
+}
+
+li {
+    /*width: 200px;*/
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.sous-text {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+.top-area {
+    width: 100%;
+    display: flex;
+    height: 750px;
+    justify-content: center;
+    padding-top: 175px;
+}
+
+.top-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.prenom-text {
+    width: 600px;
+    margin-bottom: 300px;
+}
+
+.intro {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.button {
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #FF0000; /*malachite*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ff00009f; /*emerald*/
+}
+
+.button:active {
+    background-color: #FFFFFF;
+    color: #808080;
+}
+
+.socials {
+    padding-top: 410px;
+}
+
+.logo {
+    height: 100px;
+    margin: 30px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.mid-area {
+    text-align: center;
+    padding-top: 250px;
+}
+
+.competence {
+    padding-bottom: 150px;
+}
+
+.skill-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skill {
+    color: white;
+    margin: 20px;
+}
+
+
+
+.information {
+    padding-top: 150px;
+    text-align: center;
+    margin: 80px;
+}
+
+.text-info {
+    font-size: 25px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin: 3px auto;
+}
+
+
+.mi-page-area {
+    display: flex;
+    align-items: center;
+}
+
+.title-projets {
+    text-align: center;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .contenu-projets {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+hr {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/**
+Menu burger en responsive
+*/
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #333638;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #333638;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/**
+Carousel
+*/
+
+#slider {
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+
+
+.title-projets {
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#controls i{
+    color: white;
+    font-size: 1rem;
+}
+
+.previous, .next {
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+}
+
+.previous:hover, .next:hover {
+    border: 3px solid #FF0000;
+}
+
+
+.nom-projet {
+    font-size: 24px;
+}
+
+.slide-img {
+    width: 100%;
+    height: 275px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.slide-img:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+}
+
+.slide-img:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1 {
+    background-image: url(/src/images/projet1.png);
+}
+.img-2 {
+    background-image: url(/src/images/projet2.png);
+}
+.img-3 {
+    background-image: url(/src/images/projet_figma1.png);
+}
+.img-4 {
+    background-image: url(/src/images/projet4.png);
+}
+.img-5 {
+    background-image: url(/src/images/projet3.png);
+}
+
+
+@media(max-width:1600px) {
+    .container{
+        width: 100%;
+    }
+}
+
+/**
+Apparition défilement
+*/
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-1 {
+    transition-delay: .1s
+}
+
+.reveal-2 {
+    transition-delay: .2s
+}
+
+.reveal-3 {
+    transition-delay: .3s
+}
