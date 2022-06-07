@@ -4,9 +4,11 @@
 }
 
 body {
-    height: 340vh;
+    width: 100%;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
+    overflow-x: hidden;
 }
 
 section {
@@ -117,13 +119,14 @@ p {
 .top-area {
     width: 100%;
     display: flex;
-    height: 750px;
+    height: 100vh;
     justify-content: center;
-    padding-top: 175px;
+    padding-top: 100px;
 }
 
+
 .top-image {
-    width: 100%;
+    width: 25vw;
     height: 500px;
     border-radius: 8px;
 }
@@ -172,6 +175,8 @@ p {
     margin: 20px;
 }
 
+
+
 .mid-area {
     text-align: center;
     padding-top: 250px;
@@ -181,12 +186,21 @@ p {
     padding-bottom: 150px;
 }
 
-.skill-container {
+.skill-container ul{
+    width: 100%;
     padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+}
+
+@media(max-width:1000px) {
+    .skill-container ul{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
 }
 
 .skill {
