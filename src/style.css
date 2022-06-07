@@ -124,6 +124,13 @@ p {
     padding-top: 100px;
 }
 
+@media(max-width:1000px) {
+    .top-area{
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+}
 
 .top-image {
     width: 25vw;
